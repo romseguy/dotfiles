@@ -1,0 +1,6 @@
+#!/bin/bash
+# record
+# xmacrorec2 > ./macros/ctrlg
+
+# until ctrl-c
+# for ((;;)) do cat macros/ctrlg | xmacroplay -d 1000; done

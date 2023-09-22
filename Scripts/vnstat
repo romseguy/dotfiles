@@ -1,0 +1,2 @@
+#!/bin/bash
+vnstat | grep today | awk '{print $8" "substr ($9, 1, 1)}'

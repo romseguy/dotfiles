@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo /etc/init.d/dns-clean start
+sudo systemd-resolve --flush-caches
