@@ -1,0 +1,29 @@
+! Sensible defaults
+XTerm.vt100.locale: false
+XTerm.vt100.utf8: true
+XTerm.vt100.scrollTtyOutput: false
+XTerm.vt100.scrollKey: true
+XTerm.vt100.bellIsUrgent: true
+XTerm.vt100.metaSendsEscape: true
+! Styling
+XTerm.vt100.faceName: DejaVu Sans Mono
+! XTerm.vt100.boldMode: false
+XTerm.vt100.faceSize: 11
+XTerm.vt100.internalBorder: 16
+XTerm.borderWidth: 0
+! Keybinds
+XTerm.vt100.translations: #override \n\
+    Ctrl <Key>L: hard-reset() \n\
+    Ctrl <Key>U: scroll-back(1, halfpage) \n\
+    Ctrl <Key>D: scroll-forw(1, halfpage) \n\
+    Shift <KeyPress> Home: scroll-to(begin) \n\
+    Shift <KeyPress> End: scroll-to(end) \n\
+    Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+    Ctrl Shift <Key>H: set-altscreen(toggle)
+! rest
+XTerm.vt100.background: black
+XTerm.vt100.foreground: grey
+! xterm*font:     *-fixed-*-*-*-18-*
+xterm*termName: xterm-256color
+#include "Xresources.dark"
