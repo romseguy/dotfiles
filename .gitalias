@@ -1,0 +1,34 @@
+[alias]
+    # one-line log
+    l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+    a = add
+    ap = add -p
+    c = commit --verbose
+    ca = commit -a --verbose
+    cm = commit -m
+    cam = commit -a -m
+    m = commit --amend --verbose
+    
+    d = diff -- ':!package-lock.json' ':!yarn.lock'
+    ds = diff --stat
+    dc = diff --cached
+
+    puo = push origin
+    puf = push origin main --force
+
+    s = status -s
+    co = checkout
+    cob = checkout -b
+		com = checkout main
+    # list branches sorted by last modified
+    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+    # delete branch locally
+    cod = branch -d
+
+    # delete branch remotely
+    cood = push origin --delete
+
+    # list aliases
+    la = "!git config -l | grep alias | cut -c 7-"
