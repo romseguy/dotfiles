@@ -112,6 +112,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH="$PATH:/home/x240/Executables"
 export EDITOR="$HOME/Executables/nvim.AppImage"
-
+export PATH="$PATH:/home/x240/Executables"
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"

@@ -1,4 +1,5 @@
 ! Sensible defaults
+! XTerm.vt100.toolbar: true
 XTerm.vt100.locale: false
 XTerm.vt100.utf8: true
 XTerm.vt100.scrollTtyOutput: false
@@ -15,7 +16,7 @@ XTerm.borderWidth: 0
 XTerm.vt100.translations: #override \n\
     Ctrl <Key>L: hard-reset() \n\
     Ctrl <Key>U: scroll-back(1, halfpage) \n\
-    Ctrl <Key>D: scroll-forw(1, halfpage) \n\
+    Ctrl Shift <Key>D: scroll-forw(1, halfpage) \n\
     Shift <KeyPress> Home: scroll-to(begin) \n\
     Shift <KeyPress> End: scroll-to(end) \n\
     Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
@@ -26,4 +27,13 @@ XTerm.vt100.background: black
 XTerm.vt100.foreground: grey
 ! xterm*font:     *-fixed-*-*-*-18-*
 xterm*termName: xterm-256color
+! XTerm*toolBar: on
+!
+!
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.hintstyle: hintfull
+Xft.dpi: 120
+
 #include "Xresources.dark"

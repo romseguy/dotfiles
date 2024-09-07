@@ -81,13 +81,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -107,6 +100,9 @@ export E_PREFIX="$HOME/Executables";
 export Y_PREFIX="$HOME/.yarn/bin";
 PATH+=":$E_PREFIX:$Y_PREFIX"
 
+# glibc
+# export LD_LIBRARY_PATH=/usr/local/glibc-2.38/lib:$LD_LIBRARY_PATH
+
 # tj/n
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 
@@ -119,4 +115,12 @@ eval "$(pyenv init -)"
 alias nvim="nvim.AppImage"
 alias vim=nvim
 alias vi=nvim
-export EDITOR="$HOME/Executables/nvim.AppImage"
+#export EDITOR="$HOME/Executables/nvim.AppImage"
+
+# Preferred editor for local and remote sessions
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vi'
+ else
+   export EDITOR='vi'
+ fi
+
