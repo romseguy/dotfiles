@@ -1,8 +1,11 @@
 /*
 !README.md
+!.bash_aliases
 !.bashrc
 !.gitignore
 !.gitalias
+!.gitconfig
+!.inputrc
 !.profile
 !.Xresources
 !.Xresources.dark
