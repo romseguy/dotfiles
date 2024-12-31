@@ -10,6 +10,10 @@ chmod +x appimagelauncher-lite-2.2.0-gha111-d9d4c73-x86_64.AppImage
 After this install, when you run the first time an appimage it shows up in menu and from there you can add it to the panel by the right click menu
 Depending from how the appimage has been packaged, from the menu you can also update the ones that allow update (right click menu on the appimage name).
 
+# dmenu
+
+custom launchers as desktop files are located in ~/.local/share/applications
+
 # Xterm
 
 Since some programs still use the old gnome-terminal the best way to get around the problem is to symlink it to xterm:
