@@ -111,11 +111,14 @@ Y_PREFIX="$HOME/.yarn/bin";
 export PATH="$A_PREFIX:$E_PREFIX:$Y_PREFIX:$PATH"
 alias bauh="bauh.appimage"
 alias nvim="nvim.appimage"
-alias vi=nvim
-alias vim=nvim
+#alias vi=nvim
+alias vi=vim
+#alias vim=nvim
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vi'
  else
    export EDITOR='vi'
  fi
+
+eval "$(starship init zsh)"
