@@ -19,6 +19,13 @@ replace : "@$1":"$2",
 
 custom launchers as desktop files are located in ~/.local/share/applications
 
+# git
+
+git fetch && git reset origin/main --hard
+
+  ## gitignore
+  https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore
+
 # MongoDB
 
 db.createUser({user:"username",pwd:"password", roles:[{role:"userAdminAnyDatabase",db:"admin"}],mechanisms:["SCRAM-SHA-1"]})
@@ -28,7 +35,10 @@ mongo -u username -p password --authenticationDatabase admin
 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'x';
 
+# nb
+
 # PWA
+
 bunx pwa-asset-generator logo.png ./icons
 
 # usb
