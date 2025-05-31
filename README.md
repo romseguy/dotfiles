@@ -19,6 +19,9 @@ replace : "@$1":"$2",
 
 custom launchers as desktop files are located in ~/.local/share/applications
 
+# email
+function offu(string) { return string.split('').map(char => `&#${char.charCodeAt(0)};`).join(''); }
+
 # MongoDB
 
 db.createUser({user:"username",pwd:"password", roles:[{role:"userAdminAnyDatabase",db:"admin"}],mechanisms:["SCRAM-SHA-1"]})
