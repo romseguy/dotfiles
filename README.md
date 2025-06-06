@@ -26,6 +26,9 @@ git fetch && git reset origin/main --hard
   ## gitignore
   https://raw.githubusercontent.com/github/gitignore/main/Node.gitignore
 
+  ## gist
+  https://github.com/TimMikeladze/gist-database
+
 # MongoDB
 
 db.createUser({user:"username",pwd:"password", roles:[{role:"userAdminAnyDatabase",db:"admin"}],mechanisms:["SCRAM-SHA-1"]})
