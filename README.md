@@ -38,6 +38,17 @@ mongo -u username -p password --authenticationDatabase admin
 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'x';
 
+# PSQL
+
+cd ~/Bureau/Code/rd/docker/postgres
+docker compose up
+
+## dump db
+docker exec -i postgres-database-1 pg_dump -h aws-0-eu-west-3.pooler.supabase.com -p 6543 -U postgres.guicqxduykuikofpzgcw -d postgres > ~/postgre.sql
+
+## dump roles
+docker exec -i postgres-database-1 pg_dumpall --roles-only -h aws-0-eu-west-3.pooler.supabase.com -p 6543 -U postgres.guicqxduykuikofpzgcw > ~/roles.sql
+
 # nb
 
 # PWA

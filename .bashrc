@@ -74,7 +74,8 @@ PS1="${debian_chroot:+($debian_chroot)}${usercol}\u\[\033[m\]@\[\033[m\]${hostco
 
 function settitle () {
   export PREV_COMMAND=${PREV_COMMAND}${@}
-  printf "\033]0;%s\007" "${USER}@${HOSTNAME%%.*}:${PWD}:${BASH_COMMAND//[^[:print:]]/}"
+  #printf "\033]0;%s\007" "${USER}@${HOSTNAME}:${PWD}:${BASH_COMMAND//[^[:print:]]/}"
+  printf "\033]0;%s\007" "${BASH_COMMAND//[^[:print:]]/}@${PWD}"
   export PREV_COMMAND=${PREV_COMMAND}' | '
 }
 export PROMPT_COMMAND=${PROMPT_COMMAND}

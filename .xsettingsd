@@ -1,1 +1,9 @@
-Net/ThemeName "Adwaita-dark"
+#Net/ThemeName "Adwaita-dark"
+#Net/ThemeName "Adwaita"
+Net/ThemeName "Otis"
+#Xft/Antialias 1
+#Xft/DPI 100352
+#Xft/HintStyle "hintfull"
+#Xft/Hinting 1
+#Xft/RGBA "none"
+#Xft/lcdfilter "none"
