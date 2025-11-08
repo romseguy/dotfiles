@@ -19,6 +19,9 @@ replace : "@$1":"$2",
 
 custom launchers as desktop files are located in ~/.local/share/applications
 
+# git
+git fetch && git reset origin/main --hard
+
 # email
 function offu(string) { return string.split('').map(char => `&#${char.charCodeAt(0)};`).join(''); }
 
@@ -30,6 +33,15 @@ mongo -u username -p password --authenticationDatabase admin
 # MySQL
 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'x';
+
+## DROP all tables
+  -- Increase the maximum length for GROUP_CONCAT
+  SET SESSION GROUP_CONCAT_MAX_LEN = 32768;
+
+  -- Generate and execute DROP statements for all tables in a specific database
+  SELECT CONCAT('DROP TABLE IF EXISTS ', GROUP_CONCAT(table_name))
+  FROM information_schema.tables
+  WHERE table_schema = 'your_database_name';
 
 # PWA
 bunx pwa-asset-generator logo.png ./icons

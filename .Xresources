@@ -1,9 +1,11 @@
 Xft.antialias: true
 !Xft.dpi: 80
-Xft.dpi: 92
-!Xft.dpi: 120
-Xft.hinting: true
-Xft.hintstyle: hintfull
+!Xft.dpi: 92
+Xft.dpi: 120
+!Xft.hinting: true
+Xft.hinting: false
+!Xft.hintstyle: hintfull
+!Xft.hintstyle: hintfull
 Xft.rgba: rgb
 XTerm.vt100.utf8: true
 xterm*VT100.background: black

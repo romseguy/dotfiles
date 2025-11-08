@@ -35,5 +35,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # ALIASES
 alias lvim="$LBIN/lvim"
 alias vi=vim
+#alias kubectl="minikube kubectl --"
 
 eval "$(starship init bash)"
